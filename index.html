@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win Pa Pa | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --ocean-depth: #2d5a6e;
+            --sea-foam: #a8dadc;
+            --mermaid-tail: #b8bedd;
+            --pearl: #f1faee;
+            --coral-soft: #ffb4a2;
+        }
+
+        body {
+            background-color: var(--pearl);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--ocean-depth);
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: rgba(168, 218, 220, 0.9) !important;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #a8dadc 0%, #b8bedd 100%);
+            padding: 100px 0;
+            border-bottom-left-radius: 50% 20px;
+            border-bottom-right-radius: 50% 20px;
+        }
+
+        /* Cards and Sections */
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .badge-custom {
+            background-color: var(--mermaid-tail);
+            color: var(--ocean-depth);
+            margin-right: 5px;
+        }
+
+        .footer {
+            background-color: var(--ocean-depth);
+            color: white;
+            padding: 20px 0;
+            margin-top: 50px;
+        }
+
+        .btn-mermaid {
+            background-color: var(--ocean-depth);
+            color: white;
+            border-radius: 25px;
+            padding: 10px 25px;
+        }
+
+        .btn-mermaid:hover {
+            background-color: #1d3557;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">WPP.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-link"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-center">
+        <div class="container">
+            <h1 class="display-3 fw-bold">Hi, I'm Win Pa Pa</h1>
+            <p class="lead">Aspiring Computer Scientist | Final Year Student</p>
+            <div class="mt-4">
+                <span class="badge rounded-pill badge-custom p-2 px-3">Age: 23</span>
+                <span class="badge rounded-pill badge-custom p-2 px-3">University: UCS Pyay</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <section id="about" class="col-lg-8 mb-4">
+                <div class="card p-4 h-100">
+                    <h2 class="mb-4">About Me</h2>
+                    <p>I am a passionate <strong>Computer Science</strong> student currently in my <strong>Final Year</strong> at the <strong>University of Computer Studies, Pyay (UCS Pyay)</strong>. I enjoy exploring new technologies and building creative solutions to real-world problems.</p>
+                    <p>My journey in tech is driven by curiosity and a desire to create user-friendly digital experiences.</p>
+                </div>
+            </section>
+
+            <section id="education" class="col-lg-4 mb-4">
+                <div class="card p-4 h-100" style="background-color: #f1faee;">
+                    <h3 class="h4">Education</h3>
+                    <hr>
+                    <p><strong>B.C.Sc (Computer Science)</strong><br>
+                    UCS Pyay<br>
+                    <small>Expected Graduation: 2024/2025</small></p>
+                    
+                    <h3 class="h4 mt-4">Interests</h3>
+                    <ul class="list-unstyled">
+                        <li>🌊 Web Development</li>
+                        <li>🐚 UI/UX Design</li>
+                        <li>💻 Software Engineering</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <section id="skills" class="mt-5">
+            <h2 class="text-center mb-4">Technical Skills</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                    <div class="card p-3">
+                        <h5>Frontend</h5>
+                        <p>HTML, CSS, Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card p-3">
+                        <h5>Programming</h5>
+                        <p>Java, Python, C++</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card p-3">
+                        <h5>Tools</h5>
+                        <p>Git, VS Code, Figma</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer text-center">
+        <div class="container">
+            <p class="mb-0">&copy; 2023 Win Pa Pa. Built with Mermaid Magic ✨</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
